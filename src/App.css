@@ -1,0 +1,116 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #282c34;
+  color: white;
+
+}
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px;
+  padding: 10px;
+  margin-bottom:150px ;
+}
+.btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.heading{
+  font-size: 30px;
+  margin-bottom: 20px;
+  
+}
+.add{
+  background-color: #747774;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+
+}
+.years{
+  color: #75767a;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.para{
+  color: #37383b;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.duty{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon{
+  color: #61dafb;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  font-size: 30px;
+}
+.active{
+  background-color: #141616;
+  background: transparent linear-gradient(90deg, #141616 0%, #282c34 100%) repeat scroll 0% 0%;
+  color: white;
+}
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: #61dafb;
+}
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn {
+    flex: 1;
+    margin: 5px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .para {
+    text-align: start;
+    font-size: 14px;
+  }
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    text-align: center;
+  }
+}
