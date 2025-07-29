@@ -41,6 +41,7 @@ const App = () => {
             >
               {item.company}
             </button>
+            
           ))}
         </div>
 
